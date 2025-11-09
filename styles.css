@@ -65,82 +65,20 @@ body {
 .skills li{padding:8px 0;border-bottom:1px dashed #efefef}
 
 /* PROYECTOS */
-.carousel-section {
-  text-align: center;
-  padding: 60px 0;
+.carousel{position:relative;overflow:hidden}
+.carousel-track{display:flex;transition:transform 0.5s ease-in-out}
+.carousel-item{min-width:100%;box-sizing:border-box;padding:16px}
+.carousel-caption h5 {
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 
-.carousel {
-  position: relative;
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto;
+.carousel-caption p {
+  font-size: 1rem;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-}
-
-.carousel-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-
-.carousel-item h3 {
-  font-size: 1.5em;
-  margin: 8px 0;
-}
-
-.carousel-item p {
-  font-size: 1em;
-  color: #555;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px 16px;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-btn.prev {
-  top: 38%;
-  left: -15px;
-  cursor: pointer;
-  z-index: 10;
-  background: none;
-  color: var(--bg-dark);
-}
-
-.carousel-btn.next {
-  top: 38%;
-  right: -15px;
-  cursor: pointer;
-  z-index: 10;
-  background: none;
-  color: var(--bg-dark);
+.carousel-caption .btn {
+  margin-top: 8px;
 }
 
 
