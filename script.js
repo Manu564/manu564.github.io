@@ -96,7 +96,14 @@ function onResize() {
 
 window.addEventListener('resize', onResize);
 
-// Ensure an initial safe call (guard inside updateCarousel too).
 updateCarousel();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
+
 
 /* Fin de script.js */
